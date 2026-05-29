@@ -145,26 +145,15 @@ button {
 .brand-link {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
   min-width: max-content;
 }
 
-.brand-copy {
-  display: grid;
-  line-height: 1.05;
-}
-
-.brand-copy span {
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.08rem;
-  font-weight: 700;
-}
-
-.brand-copy small {
-  color: rgba(255, 255, 255, 0.62);
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
+.brand-logo {
+  height: 46px;
+  width: auto;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 3px 7px;
 }
 
 .cf-emblem {
@@ -737,8 +726,19 @@ h3 {
 }
 
 .membership-section {
+  position: relative;
   background: #111113;
   color: var(--white);
+  overflow: hidden;
+}
+
+.membership-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('assets/fotos/IMG_1499.PNG') center/cover no-repeat;
+  opacity: 0.07;
+  pointer-events: none;
 }
 
 .membership-heading {
@@ -785,18 +785,31 @@ h3 {
 
 .about-layout {
   display: grid;
-  grid-template-columns: 360px minmax(0, 1fr);
+  grid-template-columns: 420px minmax(0, 1fr);
   gap: 70px;
   align-items: center;
 }
 
-.about-mark {
-  min-height: 360px;
-  display: grid;
-  place-items: center;
-  background: #101012;
+.about-photo {
+  position: relative;
   border-radius: var(--radius);
+  overflow: hidden;
   box-shadow: var(--shadow);
+}
+
+.about-photo img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.about-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(245, 243, 239, 0.4));
 }
 
 .about-copy {
@@ -945,6 +958,14 @@ details p {
   align-items: center;
 }
 
+.footer-logo {
+  height: 52px;
+  width: auto;
+  border-radius: 7px;
+  padding: 3px 7px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
 .footer-inner strong {
   color: var(--white);
 }
@@ -980,10 +1001,19 @@ details p {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.26);
 }
 
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+body {
+  animation: pageFadeIn 360ms ease both;
+}
+
 .reveal {
   opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 560ms var(--ease), transform 560ms var(--ease);
+  transform: translateY(18px);
+  transition: opacity 580ms var(--ease), transform 580ms var(--ease);
   will-change: transform, opacity;
 }
 
@@ -992,6 +1022,46 @@ details p {
   transform: translateY(0);
   will-change: auto;
 }
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-28px);
+  transition: opacity 620ms var(--ease), transform 620ms var(--ease);
+  will-change: transform, opacity;
+}
+
+.reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+  will-change: auto;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(28px);
+  transition: opacity 620ms var(--ease), transform 620ms var(--ease);
+  will-change: transform, opacity;
+}
+
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+  will-change: auto;
+}
+
+.proof-items .proof-item:nth-child(2) { transition-delay: 90ms; }
+.proof-items .proof-item:nth-child(3) { transition-delay: 180ms; }
+
+.practice-grid .practice-card:nth-child(2) { transition-delay: 70ms; }
+.practice-grid .practice-card:nth-child(3) { transition-delay: 140ms; }
+.practice-grid .practice-card:nth-child(4) { transition-delay: 70ms; }
+.practice-grid .practice-card:nth-child(5) { transition-delay: 140ms; }
+.practice-grid .practice-card:nth-child(6) { transition-delay: 210ms; }
+
+.membership-list .membership-row:nth-child(2) { transition-delay: 60ms; }
+.membership-list .membership-row:nth-child(3) { transition-delay: 120ms; }
+.membership-list .membership-row:nth-child(4) { transition-delay: 180ms; }
+.membership-list .membership-row:nth-child(5) { transition-delay: 240ms; }
 
 @media (max-width: 1080px) {
   .hero-inner,
@@ -1016,8 +1086,8 @@ details p {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .about-mark {
-    min-height: 270px;
+  .about-photo img {
+    height: 360px;
   }
 }
 
