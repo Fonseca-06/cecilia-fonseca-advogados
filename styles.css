@@ -145,15 +145,19 @@ button {
 .brand-link {
   display: inline-flex;
   align-items: center;
-  min-width: max-content;
+  flex: 0 0 auto;
 }
 
 .brand-logo {
-  height: 46px;
+  display: block;
+  height: 40px;
   width: auto;
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.92);
-  padding: 3px 7px;
+  max-width: 140px;
+  object-fit: contain;
+  border-radius: 6px;
+  padding: 3px 6px;
+  background: rgba(255, 255, 255, 0.93);
+  box-sizing: content-box;
 }
 
 .cf-emblem {
@@ -542,7 +546,9 @@ h3 {
 }
 
 .proof-section {
-  background: var(--paper);
+  background:
+    linear-gradient(rgba(246, 244, 240, 0.87), rgba(246, 244, 240, 0.87)),
+    url('assets/fotos/IMG_1493.PNG') center/cover no-repeat;
   color: var(--ink);
 }
 
@@ -594,7 +600,9 @@ h3 {
 }
 
 .practice-section {
-  background: var(--white);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    url('assets/fotos/IMG_1495.PNG') center/cover no-repeat;
   color: var(--ink);
 }
 
@@ -630,7 +638,9 @@ h3 {
 }
 
 .process-section {
-  background: var(--black);
+  background:
+    linear-gradient(rgba(6, 6, 8, 0.83), rgba(6, 6, 8, 0.83)),
+    url('assets/fotos/IMG_1497.PNG') center/cover no-repeat;
   color: var(--white);
 }
 
@@ -726,19 +736,10 @@ h3 {
 }
 
 .membership-section {
-  position: relative;
-  background: #111113;
+  background:
+    linear-gradient(rgba(17, 17, 19, 0.85), rgba(17, 17, 19, 0.85)),
+    url('assets/fotos/IMG_1499.PNG') center/cover no-repeat;
   color: var(--white);
-  overflow: hidden;
-}
-
-.membership-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: url('assets/fotos/IMG_1499.PNG') center/cover no-repeat;
-  opacity: 0.07;
-  pointer-events: none;
 }
 
 .membership-heading {
@@ -777,9 +778,17 @@ h3 {
   color: rgba(255, 255, 255, 0.62);
 }
 
-.about-section,
+.about-section {
+  background:
+    linear-gradient(rgba(246, 244, 240, 0.93), rgba(246, 244, 240, 0.93)),
+    url('assets/fotos/IMG_1500.PNG') center/cover no-repeat;
+  color: var(--ink);
+}
+
 .contact-section {
-  background: var(--paper);
+  background:
+    linear-gradient(rgba(246, 244, 240, 0.88), rgba(246, 244, 240, 0.88)),
+    url('assets/fotos/IMG_1492.PNG') center/cover no-repeat;
   color: var(--ink);
 }
 
@@ -823,7 +832,9 @@ h3 {
 }
 
 .faq-section {
-  background: var(--white);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89)),
+    url('assets/fotos/IMG_1501.PNG') center/cover no-repeat;
   color: var(--ink);
 }
 
@@ -959,11 +970,16 @@ details p {
 }
 
 .footer-logo {
-  height: 52px;
+  display: block;
+  height: 44px;
   width: auto;
-  border-radius: 7px;
-  padding: 3px 7px;
-  background: rgba(255, 255, 255, 0.9);
+  max-width: 150px;
+  object-fit: contain;
+  border-radius: 6px;
+  padding: 3px 6px;
+  background: rgba(255, 255, 255, 0.93);
+  box-sizing: content-box;
+  margin-bottom: 10px;
 }
 
 .footer-inner strong {
