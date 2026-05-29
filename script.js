@@ -11,7 +11,7 @@
   var heroBgImg = document.querySelector(".hero-bg-img");
 
   function getScrollTop() {
-    return document.documentElement.scrollTop || document.body.scrollTop || 0;
+    return document.body.scrollTop || document.documentElement.scrollTop || 0;
   }
 
   function syncHeader() {
