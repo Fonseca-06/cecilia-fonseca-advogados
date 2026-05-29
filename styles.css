@@ -72,6 +72,26 @@ button {
   margin: 0 auto;
 }
 
+/* Parte 4 — conteúdo no lado da cor sólida */
+.proof-section .section-inner,
+.practice-section .section-inner,
+.process-section .section-inner,
+.membership-section .section-inner,
+.faq-section .section-inner {
+  width: auto;
+  max-width: min(600px, 48vw);
+  margin-left: clamp(28px, 6vw, 100px);
+  margin-right: auto;
+}
+
+.about-section .section-inner,
+.contact-section .section-inner {
+  width: auto;
+  max-width: min(600px, 48vw);
+  margin-left: auto;
+  margin-right: clamp(28px, 6vw, 100px);
+}
+
 .site-header {
   position: fixed;
   inset: 0 0 auto 0;
@@ -565,10 +585,9 @@ h3 {
 .proof-section::before { background: url('assets/fotos/IMG_1493.PNG') right top/auto 100% no-repeat; }
 
 .proof-grid {
-  display: grid;
-  grid-template-columns: 0.86fr 1.4fr;
-  gap: 58px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .proof-intro h2 {
@@ -578,8 +597,8 @@ h3 {
 
 .proof-items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
 .proof-item,
@@ -589,7 +608,8 @@ h3 {
 }
 
 .proof-item {
-  min-height: 230px;
+  min-height: auto;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(20, 20, 20, 0.10);
   backdrop-filter: blur(8px);
@@ -599,9 +619,9 @@ h3 {
 .proof-item span,
 .practice-card span {
   display: inline-flex;
-  margin-bottom: 34px;
+  margin-bottom: 14px;
   color: var(--red);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -633,12 +653,13 @@ h3 {
 
 .practice-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .practice-card {
-  min-height: 286px;
+  min-height: auto;
+  padding: 18px 20px;
   border: 1px solid rgba(20, 20, 20, 0.10);
   background: rgba(248, 243, 236, 0.80);
   backdrop-filter: blur(8px);
@@ -659,10 +680,9 @@ h3 {
 .process-section::before { background: url('assets/fotos/IMG_1497.PNG') right top/auto 100% no-repeat; }
 
 .process-layout {
-  display: grid;
-  grid-template-columns: 0.84fr 1.16fr;
-  gap: 54px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .process-copy p {
@@ -673,12 +693,13 @@ h3 {
 
 .process-panel {
   display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
-  gap: 18px;
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 
 .process-tabs {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 8px;
 }
 
@@ -792,10 +813,16 @@ h3 {
 }
 
 .about-section {
-  background: linear-gradient(to left, rgba(244,239,232,0.99) 0%, rgba(244,239,232,0.96) 42%, rgba(244,239,232,0.38) 64%, rgba(244,239,232,0) 84%);
+  background: linear-gradient(to right, rgba(244,239,232,0.99) 0%, rgba(244,239,232,0.96) 42%, rgba(244,239,232,0.38) 64%, rgba(244,239,232,0) 84%);
   color: var(--ink);
 }
-.about-section::before { background: url('assets/fotos/IMG_1501.PNG') left top/auto 100% no-repeat; }
+.about-section::before { background: url('assets/fotos/IMG_1494.PNG') right top/auto 100% no-repeat; }
+
+.about-photo { display: none; }
+
+.about-layout {
+  display: block;
+}
 
 .contact-section {
   background: linear-gradient(to left, rgba(244,239,232,0.99) 0%, rgba(244,239,232,0.96) 42%, rgba(244,239,232,0.38) 64%, rgba(244,239,232,0) 84%);
@@ -849,9 +876,9 @@ h3 {
 .faq-section::before { background: url('assets/fotos/IMG_1500.PNG') right top/auto 100% no-repeat; }
 
 .faq-layout {
-  display: grid;
-  grid-template-columns: 0.82fr 1.18fr;
-  gap: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .faq-list {
@@ -905,10 +932,9 @@ details p {
 }
 
 .contact-layout {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 58px;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 
 .contact-copy p {
