@@ -22,11 +22,15 @@
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  height: 100%;
 }
 
 body {
   margin: 0;
+  height: 100svh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   background: var(--black);
   color: var(--white);
   font-family: Inter, Arial, sans-serif;
@@ -60,7 +64,6 @@ button {
 }
 
 .page-wrapper {
-  overflow-x: hidden;
   background: var(--black);
 }
 

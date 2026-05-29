@@ -10,14 +10,18 @@
   var revealEls = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
   var heroBgImg = document.querySelector(".hero-bg-img");
 
+  function getScrollTop() {
+    return document.documentElement.scrollTop || document.body.scrollTop || 0;
+  }
+
   function syncHeader() {
     if (!header) return;
-    header.classList.toggle("is-scrolled", window.scrollY > 36);
+    header.classList.toggle("is-scrolled", getScrollTop() > 36);
   }
 
   function syncParallax() {
     if (!heroBgImg) return;
-    var scrolled = window.scrollY;
+    var scrolled = getScrollTop();
     if (scrolled < window.innerHeight * 1.4) {
       heroBgImg.style.transform = "translateY(" + (scrolled * 0.25) + "px) scale(1.08)";
     }
@@ -99,6 +103,8 @@
 
   window.addEventListener("scroll", syncHeader, { passive: true });
   window.addEventListener("scroll", syncParallax, { passive: true });
+  document.body.addEventListener("scroll", syncHeader, { passive: true });
+  document.body.addEventListener("scroll", syncParallax, { passive: true });
   window.addEventListener("resize", function () {
     if (window.innerWidth > 880) closeMenu();
   }, { passive: true });
