@@ -133,6 +133,22 @@
     contactForm.addEventListener("submit", handleContactSubmit);
   }
 
+  function initSectionTransitions() {
+    var sections = document.querySelectorAll("section");
+    if (!sections.length || !("IntersectionObserver" in window)) return;
+
+    var sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        entry.target.classList.toggle("is-active", entry.isIntersecting);
+      });
+    }, { threshold: 0.45 });
+
+    sections.forEach(function (section) {
+      sectionObserver.observe(section);
+    });
+  }
+
   syncHeader();
   initReveal();
+  initSectionTransitions();
 }());
