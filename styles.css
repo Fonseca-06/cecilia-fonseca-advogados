@@ -558,7 +558,12 @@ h3 {
 
 .proof-section {
   background:
-    linear-gradient(rgba(244, 239, 232, 0.87), rgba(244, 239, 232, 0.87)),
+    linear-gradient(
+      120deg,
+      rgba(244, 239, 232, 0.96) 0%,
+      rgba(244, 239, 232, 0.68) 52%,
+      rgba(244, 239, 232, 0.92) 100%
+    ),
     url('assets/fotos/IMG_1493.PNG') center/cover no-repeat;
   color: var(--ink);
 }
@@ -589,8 +594,10 @@ h3 {
 
 .proof-item {
   min-height: 230px;
-  background: var(--white);
-  border: 1px solid rgba(20, 20, 20, 0.08);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(20, 20, 20, 0.10);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .proof-item span,
@@ -612,7 +619,12 @@ h3 {
 
 .practice-section {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.94) 0%,
+      rgba(255, 255, 255, 0.72) 50%,
+      rgba(255, 255, 255, 0.94) 100%
+    ),
     url('assets/fotos/IMG_1495.PNG') center/cover no-repeat;
   color: var(--ink);
 }
@@ -637,8 +649,10 @@ h3 {
 
 .practice-card {
   min-height: 286px;
-  border: 1px solid rgba(20, 20, 20, 0.08);
-  background: #f8f3ec;
+  border: 1px solid rgba(20, 20, 20, 0.10);
+  background: rgba(248, 243, 236, 0.80);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
@@ -650,7 +664,12 @@ h3 {
 
 .process-section {
   background:
-    linear-gradient(rgba(6, 6, 8, 0.83), rgba(6, 6, 8, 0.83)),
+    linear-gradient(
+      135deg,
+      rgba(12, 6, 8, 0.94) 0%,
+      rgba(20, 20, 20, 0.55) 50%,
+      rgba(12, 6, 8, 0.92) 100%
+    ),
     url('assets/fotos/IMG_1497.PNG') center/cover no-repeat;
   color: var(--white);
 }
@@ -748,7 +767,12 @@ h3 {
 
 .membership-section {
   background:
-    linear-gradient(rgba(17, 17, 19, 0.85), rgba(17, 17, 19, 0.85)),
+    linear-gradient(
+      160deg,
+      rgba(10, 6, 8, 0.92) 0%,
+      rgba(20, 20, 20, 0.60) 50%,
+      rgba(10, 6, 8, 0.94) 100%
+    ),
     url('assets/fotos/IMG_1499.PNG') center/cover no-repeat;
   color: var(--white);
 }
@@ -791,14 +815,24 @@ h3 {
 
 .about-section {
   background:
-    linear-gradient(rgba(244, 239, 232, 0.91), rgba(244, 239, 232, 0.91)),
+    linear-gradient(
+      90deg,
+      rgba(244, 239, 232, 0.98) 0%,
+      rgba(244, 239, 232, 0.80) 60%,
+      rgba(244, 239, 232, 0.92) 100%
+    ),
     url('assets/fotos/IMG_1501.PNG') center/cover no-repeat;
   color: var(--ink);
 }
 
 .contact-section {
   background:
-    linear-gradient(rgba(244, 239, 232, 0.88), rgba(244, 239, 232, 0.88)),
+    linear-gradient(
+      110deg,
+      rgba(244, 239, 232, 0.70) 0%,
+      rgba(244, 239, 232, 0.92) 55%,
+      rgba(244, 239, 232, 0.96) 100%
+    ),
     url('assets/fotos/IMG_1492.PNG') center/cover no-repeat;
   color: var(--ink);
 }
@@ -844,8 +878,13 @@ h3 {
 
 .faq-section {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.89), rgba(255, 255, 255, 0.89)),
-    url('assets/fotos/IMG_1501.PNG') center/cover no-repeat;
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.76) 50%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    url('assets/fotos/IMG_1500.PNG') center/cover no-repeat;
   color: var(--ink);
 }
 
@@ -861,9 +900,11 @@ h3 {
 }
 
 details {
-  border: 1px solid rgba(20, 20, 20, 0.1);
+  border: 1px solid rgba(20, 20, 20, 0.10);
   border-radius: var(--radius);
-  background: #f8f3ec;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 summary {
