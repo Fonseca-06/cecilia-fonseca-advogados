@@ -559,10 +559,10 @@ h3 {
 }
 
 .proof-section {
-  background: linear-gradient(120deg, rgba(244, 239, 232, 0.96) 0%, rgba(244, 239, 232, 0.68) 52%, rgba(244, 239, 232, 0.92) 100%);
+  background: linear-gradient(to right, rgba(244,239,232,0.99) 0%, rgba(244,239,232,0.96) 42%, rgba(244,239,232,0.40) 66%, rgba(244,239,232,0) 86%);
   color: var(--ink);
 }
-.proof-section::before { background: url('assets/fotos/IMG_1493.PNG') center 10%/cover no-repeat; }
+.proof-section::before { background: url('assets/fotos/IMG_1493.PNG') right 8%/cover no-repeat; }
 
 .proof-grid {
   display: grid;
@@ -614,10 +614,10 @@ h3 {
 }
 
 .practice-section {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.72) 50%, rgba(255, 255, 255, 0.94) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0.99) 0%, rgba(255,255,255,0.96) 42%, rgba(255,255,255,0.35) 65%, rgba(255,255,255,0) 85%);
   color: var(--ink);
 }
-.practice-section::before { background: url('assets/fotos/IMG_1495.PNG') 55% 8%/cover no-repeat; }
+.practice-section::before { background: url('assets/fotos/IMG_1495.PNG') right 6%/cover no-repeat; }
 
 .section-heading {
   max-width: 820px;
@@ -653,10 +653,10 @@ h3 {
 }
 
 .process-section {
-  background: linear-gradient(135deg, rgba(12, 6, 8, 0.94) 0%, rgba(20, 20, 20, 0.55) 50%, rgba(12, 6, 8, 0.92) 100%);
+  background: linear-gradient(to right, rgba(12,6,8,0.98) 0%, rgba(12,6,8,0.95) 44%, rgba(12,6,8,0.35) 66%, rgba(12,6,8,0) 86%);
   color: var(--white);
 }
-.process-section::before { background: url('assets/fotos/IMG_1497.PNG') 58% 8%/cover no-repeat; }
+.process-section::before { background: url('assets/fotos/IMG_1497.PNG') right 6%/cover no-repeat; }
 
 .process-layout {
   display: grid;
@@ -750,10 +750,10 @@ h3 {
 }
 
 .membership-section {
-  background: linear-gradient(160deg, rgba(10, 6, 8, 0.92) 0%, rgba(20, 20, 20, 0.60) 50%, rgba(10, 6, 8, 0.94) 100%);
+  background: linear-gradient(to right, rgba(10,6,8,0.98) 0%, rgba(10,6,8,0.95) 44%, rgba(10,6,8,0.35) 66%, rgba(10,6,8,0) 86%);
   color: var(--white);
 }
-.membership-section::before { background: url('assets/fotos/IMG_1499.PNG') center 10%/cover no-repeat; }
+.membership-section::before { background: url('assets/fotos/IMG_1499.PNG') right 8%/cover no-repeat; }
 
 .membership-heading {
   max-width: 800px;
@@ -792,16 +792,16 @@ h3 {
 }
 
 .about-section {
-  background: linear-gradient(90deg, rgba(244, 239, 232, 0.98) 0%, rgba(244, 239, 232, 0.80) 60%, rgba(244, 239, 232, 0.92) 100%);
+  background: linear-gradient(to left, rgba(244,239,232,0.99) 0%, rgba(244,239,232,0.96) 42%, rgba(244,239,232,0.38) 64%, rgba(244,239,232,0) 84%);
   color: var(--ink);
 }
-.about-section::before { background: url('assets/fotos/IMG_1501.PNG') 65% center/cover no-repeat; }
+.about-section::before { background: url('assets/fotos/IMG_1501.PNG') left 20%/cover no-repeat; }
 
 .contact-section {
-  background: linear-gradient(110deg, rgba(244, 239, 232, 0.70) 0%, rgba(244, 239, 232, 0.92) 55%, rgba(244, 239, 232, 0.96) 100%);
+  background: linear-gradient(to left, rgba(244,239,232,0.99) 0%, rgba(244,239,232,0.96) 42%, rgba(244,239,232,0.38) 64%, rgba(244,239,232,0) 84%);
   color: var(--ink);
 }
-.contact-section::before { background: url('assets/fotos/IMG_1492.PNG') center 8%/cover no-repeat; }
+.contact-section::before { background: url('assets/fotos/IMG_1492.PNG') left 8%/cover no-repeat; }
 
 .about-layout {
   display: grid;
@@ -843,10 +843,10 @@ h3 {
 }
 
 .faq-section {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.76) 50%, rgba(255, 255, 255, 0.95) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0.99) 0%, rgba(255,255,255,0.96) 42%, rgba(255,255,255,0.35) 65%, rgba(255,255,255,0) 85%);
   color: var(--ink);
 }
-.faq-section::before { background: url('assets/fotos/IMG_1500.PNG') center 10%/cover no-repeat; }
+.faq-section::before { background: url('assets/fotos/IMG_1500.PNG') right 8%/cover no-repeat; }
 
 .faq-layout {
   display: grid;
@@ -1074,7 +1074,7 @@ details p {
   inset: 0;
   z-index: -1;
   transform: scale(1.04);
-  opacity: 0.7;
+  opacity: 0.88;
   transition:
     transform 1100ms cubic-bezier(0.16, 1, 0.3, 1),
     opacity 900ms ease;
