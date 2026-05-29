@@ -23,14 +23,14 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-section[id] {
-  scroll-margin-top: 120px;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 body {
   margin: 0;
+  height: 100%;
   background: var(--black);
   color: var(--white);
   font-family: Inter, Arial, sans-serif;
@@ -64,12 +64,9 @@ button {
 }
 
 .page-wrapper {
-  min-height: 100vh;
-  overflow: hidden;
-  background:
-    radial-gradient(ellipse at 18% 10%, rgba(196, 21, 48, 0.13), transparent 38rem),
-    radial-gradient(ellipse at 80% 6%, rgba(184, 150, 60, 0.05), transparent 28rem),
-    linear-gradient(180deg, #141414 0%, #1a1a1a 44rem, #f4efe8 44rem);
+  min-height: 100%;
+  overflow-x: hidden;
+  background: var(--black);
 }
 
 .section-inner {
@@ -330,11 +327,15 @@ button {
 
 .hero-section {
   position: relative;
+  height: 100svh;
   min-height: 100svh;
   padding: 172px 0 34px;
   display: grid;
   align-items: end;
   isolation: isolate;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  overflow: hidden;
 }
 
 .hero-media,
@@ -546,7 +547,15 @@ h3 {
 .about-section,
 .faq-section,
 .contact-section {
-  padding: 104px 0;
+  height: 100svh;
+  min-height: 100svh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 0 40px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .proof-section {
@@ -1255,8 +1264,9 @@ details p {
   }
 
   .hero-section {
-    min-height: auto;
-    padding: 142px 0 20px;
+    height: 100svh;
+    min-height: 100svh;
+    padding: 120px 0 20px;
   }
 
   .hero-inner {
@@ -1290,7 +1300,9 @@ details p {
   .about-section,
   .faq-section,
   .contact-section {
-    padding: 72px 0;
+    height: 100svh;
+    min-height: 100svh;
+    padding: 100px 0 24px;
   }
 
   .proof-item,
