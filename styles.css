@@ -149,24 +149,17 @@ button {
   text-decoration: none;
 }
 
-.brand-logo-wrap {
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px;
-  flex-shrink: 0;
-}
-
 .brand-logo {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 8px;
+  background:
+    rgba(255, 255, 255, 0.95)
+    url('assets/fotos/Logo CF - Branca.PNG')
+    center / contain
+    no-repeat;
+  flex-shrink: 0;
 }
 
 .cf-emblem {
@@ -979,24 +972,16 @@ details p {
   align-items: center;
 }
 
-.footer-logo-wrap {
-  width: 54px;
-  height: 54px;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  margin-bottom: 12px;
-}
-
 .footer-logo {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 58px;
+  height: 58px;
+  border-radius: 8px;
+  background:
+    rgba(255, 255, 255, 0.95)
+    url('assets/fotos/Logo CF - Branca.PNG')
+    center / contain
+    no-repeat;
+  margin-bottom: 12px;
 }
 
 .footer-inner strong {
