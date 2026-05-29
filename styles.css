@@ -27,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  height: 100svh;
+  height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -325,8 +325,8 @@ button {
 
 .hero-section {
   position: relative;
-  height: 100svh;
-  min-height: 100svh;
+  height: 100vh;
+  min-height: 100vh;
   padding: 172px 0 34px;
   display: grid;
   align-items: end;
@@ -545,8 +545,8 @@ h3 {
 .about-section,
 .faq-section,
 .contact-section {
-  height: 100svh;
-  min-height: 100svh;
+  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1303,8 +1303,8 @@ details p {
   }
 
   .hero-section {
-    height: 100svh;
-    min-height: 100svh;
+    height: 100vh;
+    min-height: 100vh;
     padding: 120px 0 20px;
   }
 
@@ -1339,8 +1339,8 @@ details p {
   .about-section,
   .faq-section,
   .contact-section {
-    height: 100svh;
-    min-height: 100svh;
+    height: 100vh;
+    min-height: 100vh;
     padding: 100px 0 24px;
   }
 
