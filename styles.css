@@ -562,7 +562,7 @@ h3 {
   background: linear-gradient(to right, rgba(244,239,232,0.99) 0%, rgba(244,239,232,0.96) 42%, rgba(244,239,232,0.40) 66%, rgba(244,239,232,0) 86%);
   color: var(--ink);
 }
-.proof-section::before { background: url('assets/fotos/IMG_1493.PNG') right 8%/cover no-repeat; }
+.proof-section::before { background: url('assets/fotos/IMG_1493.PNG') right top/auto 100% no-repeat; }
 
 .proof-grid {
   display: grid;
@@ -617,7 +617,7 @@ h3 {
   background: linear-gradient(to right, rgba(255,255,255,0.99) 0%, rgba(255,255,255,0.96) 42%, rgba(255,255,255,0.35) 65%, rgba(255,255,255,0) 85%);
   color: var(--ink);
 }
-.practice-section::before { background: url('assets/fotos/IMG_1495.PNG') right 6%/cover no-repeat; }
+.practice-section::before { background: url('assets/fotos/IMG_1495.PNG') right top/auto 100% no-repeat; }
 
 .section-heading {
   max-width: 820px;
@@ -656,7 +656,7 @@ h3 {
   background: linear-gradient(to right, rgba(12,6,8,0.98) 0%, rgba(12,6,8,0.95) 44%, rgba(12,6,8,0.35) 66%, rgba(12,6,8,0) 86%);
   color: var(--white);
 }
-.process-section::before { background: url('assets/fotos/IMG_1497.PNG') right 6%/cover no-repeat; }
+.process-section::before { background: url('assets/fotos/IMG_1497.PNG') right top/auto 100% no-repeat; }
 
 .process-layout {
   display: grid;
@@ -753,7 +753,7 @@ h3 {
   background: linear-gradient(to right, rgba(10,6,8,0.98) 0%, rgba(10,6,8,0.95) 44%, rgba(10,6,8,0.35) 66%, rgba(10,6,8,0) 86%);
   color: var(--white);
 }
-.membership-section::before { background: url('assets/fotos/IMG_1499.PNG') right 8%/cover no-repeat; }
+.membership-section::before { background: url('assets/fotos/IMG_1499.PNG') right top/auto 100% no-repeat; }
 
 .membership-heading {
   max-width: 800px;
@@ -795,13 +795,13 @@ h3 {
   background: linear-gradient(to left, rgba(244,239,232,0.99) 0%, rgba(244,239,232,0.96) 42%, rgba(244,239,232,0.38) 64%, rgba(244,239,232,0) 84%);
   color: var(--ink);
 }
-.about-section::before { background: url('assets/fotos/IMG_1501.PNG') left 20%/cover no-repeat; }
+.about-section::before { background: url('assets/fotos/IMG_1501.PNG') left top/auto 100% no-repeat; }
 
 .contact-section {
   background: linear-gradient(to left, rgba(244,239,232,0.99) 0%, rgba(244,239,232,0.96) 42%, rgba(244,239,232,0.38) 64%, rgba(244,239,232,0) 84%);
   color: var(--ink);
 }
-.contact-section::before { background: url('assets/fotos/IMG_1492.PNG') left 8%/cover no-repeat; }
+.contact-section::before { background: url('assets/fotos/IMG_1492.PNG') left top/auto 100% no-repeat; }
 
 .about-layout {
   display: grid;
@@ -846,7 +846,7 @@ h3 {
   background: linear-gradient(to right, rgba(255,255,255,0.99) 0%, rgba(255,255,255,0.96) 42%, rgba(255,255,255,0.35) 65%, rgba(255,255,255,0) 85%);
   color: var(--ink);
 }
-.faq-section::before { background: url('assets/fotos/IMG_1500.PNG') right 8%/cover no-repeat; }
+.faq-section::before { background: url('assets/fotos/IMG_1500.PNG') right top/auto 100% no-repeat; }
 
 .faq-layout {
   display: grid;
