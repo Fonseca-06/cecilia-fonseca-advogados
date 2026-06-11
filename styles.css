@@ -136,13 +136,13 @@ summary:focus-visible {
 }
 
 .nav-shell {
-  width: min(1160px, calc(100% - 32px));
-  min-height: 64px;
+  width: min(900px, calc(100% - 32px));
+  min-height: 56px;
   margin: 12px auto 0;
-  padding: 8px 10px 8px 16px;
+  padding: 6px 8px 6px 14px;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   background: rgba(6, 6, 8, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.10);
   border-radius: 999px;
@@ -157,8 +157,8 @@ summary:focus-visible {
 }
 
 .site-header.is-scrolled .nav-shell {
-  width: min(980px, calc(100% - 32px));
-  min-height: 60px;
+  width: min(820px, calc(100% - 32px));
+  min-height: 52px;
   margin-top: -28px;
   background: rgba(7, 7, 8, 0.78);
 }
@@ -171,9 +171,9 @@ summary:focus-visible {
 }
 
 .brand-logo {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
   border-radius: 8px;
   background:
     rgba(255, 255, 255, 0.95)
@@ -267,8 +267,8 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  margin-left: auto;
+  gap: 4px;
+  margin: 0 auto;
 }
 
 .main-nav a {
@@ -308,6 +308,13 @@ summary:focus-visible {
 
 .button-primary {
   animation: ctaPulse 3.4s ease-in-out infinite;
+}
+
+.nav-cta {
+  min-height: 42px;
+  padding: 0 16px;
+  font-size: 0.88rem;
+  flex-shrink: 0;
 }
 
 @keyframes ctaPulse {
@@ -597,6 +604,16 @@ h2 em {
   color: var(--ink);
 }
 
+.proof-lead {
+  max-width: 720px;
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+.proof-lead + .proof-lead {
+  margin-top: 12px;
+}
+
 .proof-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -724,6 +741,39 @@ h2 em {
   transform: scaleX(1);
 }
 
+.practice-sub {
+  max-width: 640px;
+  margin-top: 14px;
+  color: var(--muted);
+}
+
+.card-includes {
+  padding-top: 10px;
+  border-top: 1px solid rgba(20, 20, 20, 0.08);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.card-includes strong {
+  color: var(--gold-deep);
+}
+
+.practice-note {
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+.practice-note a {
+  color: var(--red);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.practice-note a:hover {
+  color: var(--gold-deep);
+}
+
 .process-section {
   background:
     radial-gradient(110% 110% at 88% 12%, rgba(196, 21, 48, 0.16), transparent 52%),
@@ -832,7 +882,7 @@ h2 em {
   background: linear-gradient(to right, rgba(233,222,208,1) 0%, rgba(233,222,208,0.99) 52%, rgba(233,222,208,0.62) 74%, rgba(233,222,208,0.16) 100%);
   color: var(--ink);
 }
-.membership-section::before { background: url('assets/fotos/IMG_1499.webp') right top/auto 100% no-repeat; }
+.membership-section::before { background: url('assets/fotos/IMG_1499.webp') right top/auto 100vh no-repeat; }
 
 .membership-heading {
   max-width: 700px;
@@ -923,11 +973,31 @@ h2 em {
   font-size: 1.08rem;
 }
 
+.about-principles {
+  display: grid;
+  gap: 16px;
+  max-width: 640px;
+  margin: 26px auto 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.about-principles li {
+  padding-left: 18px;
+  border-left: 2px solid var(--gold);
+  color: rgba(244, 239, 232, 0.72);
+}
+
+.about-principles strong {
+  color: var(--paper);
+}
+
 .faq-section {
   background: linear-gradient(to right, rgba(250,246,239,0.99) 0%, rgba(250,246,239,0.96) 42%, rgba(250,246,239,0.35) 65%, rgba(250,246,239,0) 85%);
   color: var(--ink);
 }
-.faq-section::before { background: url('assets/fotos/IMG_1500.webp') right top/auto 100% no-repeat; }
+.faq-section::before { background: url('assets/fotos/IMG_1500.webp') right top/auto 100vh no-repeat; }
 
 .faq-layout {
   display: flex;
@@ -1360,7 +1430,7 @@ a.contact-channel:focus-visible {
 
   .main-nav {
     position: fixed;
-    top: 118px;
+    top: 110px;
     left: 20px;
     right: 20px;
     display: grid;
@@ -1447,9 +1517,9 @@ a.contact-channel:focus-visible {
 
   .nav-shell {
     width: calc(100% - 20px);
-    min-height: 64px;
+    min-height: 56px;
     margin-top: 10px;
-    padding: 9px 10px;
+    padding: 7px 10px;
   }
 
   .site-header.is-scrolled .nav-shell {
